@@ -1,0 +1,18 @@
+{
+  "name": "mk_taw",
+  "version": "1.0.0",
+  "description": "Taw lab 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lab5"
+  ],
+  "author": "Marcin Król",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1"
+  }
+
+}
