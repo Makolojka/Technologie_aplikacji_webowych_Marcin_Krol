@@ -1,13 +1,13 @@
 {
   "name": "mk_taw",
   "version": "1.0.0",
-  "description": "Taw lab 5",
+  "description": "Taw lab 8",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "lab5"
+    "lab8"
   ],
   "author": "Marcin Król",
   "license": "ISC",
