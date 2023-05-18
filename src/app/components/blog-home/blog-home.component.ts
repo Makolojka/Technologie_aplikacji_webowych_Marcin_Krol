@@ -8,6 +8,9 @@ import {Component} from '@angular/core';
 export class BlogHomeComponent {
   public filterText: string = '';
 
+  constructor() {
+  }
+
   getName($event: string): void {
     this.filterText = $event;
   }
