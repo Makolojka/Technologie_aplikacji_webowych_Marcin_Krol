@@ -22,6 +22,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from
 import {AuthInterceptor} from
     './services/auth.interceptor';
 import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { LoginComponent } from './components/login/login.component';
     FilterTextPipe,
     TextFormatDirective,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
