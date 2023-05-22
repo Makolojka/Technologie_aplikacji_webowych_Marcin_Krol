@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'search-bar',
@@ -10,12 +11,21 @@ export class SearchBarComponent {
 
   @Output() name = new EventEmitter<string>();
 
-  constructor() {}
-    ngOnInit(): void {
-    }
+  constructor(private router: Router, private route: ActivatedRoute){ }
 
-    sendFilter(): void {
-      this.name.emit(this.filterText);
-    }
 
+  ngOnInit(): void {
+  }
+
+  sendFilter(): void {
+    this.name.emit(this.filterText);
+    this.router.navigate(['/blog'], {
+      queryParams: {
+        name:
+        this.filterText
+      }
+    });
+
+  }
 }
+
