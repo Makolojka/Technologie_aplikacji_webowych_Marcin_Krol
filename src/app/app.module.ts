@@ -23,6 +23,7 @@ import {AuthInterceptor} from
     './services/auth.interceptor';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { SignupComponent } from './components/signup/signup.component';
     TextFormatDirective,
     HomeComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
