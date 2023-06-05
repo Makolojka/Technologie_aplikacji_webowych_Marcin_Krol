@@ -1,12 +1,15 @@
+'use strict';
+
 const express = require('express');
-const questions = require('./questions').preQuestions;
-const config = require('./config').config;
+
+const PORT = 8080;
+const HOST = '0.0.0.0';
 
 const app = express();
-
-app.get('/api/questions', (request, response) => {
-    response.send(questions);
+app.get('/', (req, res) => {
+    res.send('Technologie aplikacji webowych');
 });
-app.listen(config.port, function () {
-    console.info(`Server is running at port 3000`);
+
+app.listen(PORT, function () {
+    console.info(`Server is running at ${PORT} on ${HOST}`)
 });
